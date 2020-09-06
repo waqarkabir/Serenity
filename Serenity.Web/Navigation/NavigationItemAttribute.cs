@@ -92,7 +92,6 @@ namespace Serenity.Navigation
 #else
             if (!url.StartsWith("~/"))
             {
-
                 var routePrefix = controller.GetCustomAttribute<RoutePrefixAttribute>();
                 if (routePrefix != null)
                     url = UriHelper.Combine(routePrefix.Prefix, url);
